@@ -223,6 +223,12 @@ dd {
   max-width: none;
 }
 
+#research .section-heading h2 {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+}
+
 .section-heading h2,
 .contact h2 {
   color: var(--accent);
