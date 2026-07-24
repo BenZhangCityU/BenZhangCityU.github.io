@@ -217,7 +217,9 @@ dd {
   margin-bottom: 28px;
 }
 
-#research .section-heading {
+#research .section-heading,
+#research .section-heading h2 {
+  width: 100%;
   max-width: none;
 }
 
