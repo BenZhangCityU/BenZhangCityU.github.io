@@ -125,6 +125,18 @@ main {
   letter-spacing: 0;
 }
 
+.seo-identity {
+  margin: -6px 0 14px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.seo-identity-contact {
+  margin: 12px 0 0;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent-dark);
@@ -410,6 +422,11 @@ article p,
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.38fr);
   gap: 28px;
   align-items: end;
+}
+
+.contact h2 {
+  text-align: left;
+  text-justify: auto;
 }
 
 .contact-links {
