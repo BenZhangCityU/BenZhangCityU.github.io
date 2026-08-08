@@ -517,3 +517,9 @@ article p,
     padding: 24px;
   }
 }
+/* Use character-level spacing for justified Chinese copy. */
+.bio[lang="zh-CN"] {
+  text-align: justify;
+  text-justify: auto;
+  text-justify: inter-character;
+}
