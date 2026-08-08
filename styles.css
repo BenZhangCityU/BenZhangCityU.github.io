@@ -520,7 +520,6 @@ article p,
 /* Use character-level spacing for justified Chinese copy. */
 .bio[lang="zh-CN"] {
   text-align: justify;
-  text-align-last: justify;
   text-justify: auto;
   text-justify: inter-character;
 }
