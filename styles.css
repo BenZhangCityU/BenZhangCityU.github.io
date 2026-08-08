@@ -543,7 +543,11 @@ article p,
   .lead {
     font-size: 1rem;
     line-height: 1.65;
-    text-align: left;
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
     overflow-wrap: anywhere;
   }
 
@@ -554,9 +558,14 @@ article p,
     overflow-wrap: anywhere;
   }
 
-  .bio:not([lang="zh-CN"]) {
-    text-align: left;
-    text-justify: auto;
+  .bio:not([lang="zh-CN"]),
+  .contact h2 {
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: anywhere;
   }
 
   .profile-panel {
