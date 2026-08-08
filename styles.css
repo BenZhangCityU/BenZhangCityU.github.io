@@ -478,30 +478,113 @@ article p,
 }
 
 @media (max-width: 620px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   main,
   .institution-bar,
   .site-footer {
-    width: min(100% - 28px, 1180px);
+    width: 100%;
+  }
+
+  main {
+    box-shadow: none;
+  }
+
+  .institution-bar {
+    padding: 8px 18px 7px;
+  }
+
+  .cityu-mark img {
+    width: 135px;
   }
 
   .nav {
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 
   .nav-inner {
-    width: max-content;
-    min-width: 100%;
-    padding: 0 14px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    width: 100%;
+    min-width: 0;
+    padding: 0 4px;
+    font-size: 0.68rem;
   }
 
   .nav a {
-    min-height: 40px;
-    padding: 0 10px;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 2px;
+    white-space: nowrap;
   }
 
   .hero {
     min-height: auto;
-    padding: 46px 0;
+    gap: 28px;
+    padding: 32px 20px 38px;
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero-copy h1 {
+    margin-bottom: 12px;
+    font-size: clamp(2.35rem, 13vw, 3rem);
+  }
+
+  .seo-identity {
+    margin-bottom: 12px;
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.65;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+
+  .bio {
+    margin-top: 22px;
+    font-size: 0.96rem;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+  }
+
+  .bio:not([lang="zh-CN"]) {
+    text-align: left;
+    text-justify: auto;
+  }
+
+  .profile-panel {
+    padding: 20px;
+  }
+
+  .portrait {
+    width: min(100%, 170px);
+    margin-bottom: 18px;
+  }
+
+  .profile-panel dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .profile-panel dl div {
+    min-height: 92px;
+    padding: 13px 14px;
+  }
+
+  .section {
+    padding: 38px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 22px;
   }
 
   .feature-grid,
@@ -509,12 +592,8 @@ article p,
     grid-template-columns: 1fr;
   }
 
-  .profile-panel dl {
-    grid-template-columns: 1fr;
-  }
-
   .media-section {
-    padding: 24px;
+    padding: 20px;
   }
 }
 /* Use character-level spacing for justified Chinese copy. */
