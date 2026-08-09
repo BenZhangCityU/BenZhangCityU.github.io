@@ -490,7 +490,7 @@ article p,
 @media (max-width: 620px) {
   html,
   body {
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   main,
