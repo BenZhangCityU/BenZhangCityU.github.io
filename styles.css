@@ -27,6 +27,10 @@ body {
   line-height: 1.6;
 }
 
+strong {
+  color: var(--ink);
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
