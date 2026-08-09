@@ -9,6 +9,7 @@
   --accent-soft: #f8e8e9;
   --gold: #c99700;
   --shadow: 0 12px 28px rgba(32, 32, 32, 0.08);
+  --sticky-header-height: 0px;
 }
 
 * {
@@ -17,6 +18,11 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+main[id],
+section[id] {
+  scroll-margin-top: calc(var(--sticky-header-height) + 5px);
 }
 
 body {
